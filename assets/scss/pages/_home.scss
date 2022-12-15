@@ -1,0 +1,435 @@
+// Handmade section start
+.handmade {
+  background-image: url(../imgs/HandmadeCeramics.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+  .ceramics {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 100px;
+
+    h1 {
+      font-weight: 200px;
+      font-size: 74px;
+      line-height: 84px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 84px;
+    }
+
+    #btn {
+      background-color: rgb(247, 238, 238);
+      border: none;
+      color: #4d2c57;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #btn:hover {
+      background-color: rgb(192, 182, 181);
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .handmade {
+    .ceramics {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// Handmade section end
+
+// Our bestsellers section start
+.ourBestsellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .best {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #4d2c57;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+    .cardText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #4d2c57;
+    }
+  }
+
+  .buyBtn {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buybtn {
+    background-color: white;
+    border: 2px solid black;
+    color: #4d2c57;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #buybtn:hover {
+    background-color: #4d2c57;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .ourBestsellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .best {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: #4d2c57;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Our bestsellers section end
+
+// Home decor items section start
+.homeDecor {
+  background-image: url(../imgs/HomeDecoritems.jfif);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+  .decor {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 100px;
+
+    h1 {
+      font-weight: 200px;
+      font-size: 74px;
+      line-height: 84px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 84px;
+    }
+
+    #btn {
+      background-color: rgb(247, 238, 238);
+      border: none;
+      color: #4d2c57;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #btn:hover {
+      background-color: rgb(192, 182, 181);
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .homeDecor {
+    .decor {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//   Home decor items section end
+
+// Two cards section start
+.twoCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+
+  .mainCards {
+    display: flex;
+    flex-direction: row;
+    width: 82%;
+    justify-content: space-around;
+    
+
+    h1 {
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
+      color: #4d2c57;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      color: #4d2c57;
+      margin-top: 20px;
+    }
+
+  }
+
+  .buyBtn {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #buybtn {
+    background-color: white;
+    border: 2px solid black;
+    color: #4d2c57;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #buybtn:hover {
+    background-color: #4d2c57;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 996px){
+  .twoCards{
+    .mainCards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  }
+}
+// Two cards section end
+
+// Sign-up section start
+.singUp {
+  background-image: url(../imgs/Sign-up.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+  .mainSingUp {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 100px;
+
+    h1 {
+      font-weight: 200px;
+      font-size: 74px;
+      line-height: 84px;
+    }
+
+    .inp {
+      background-color: #f1f1f1;
+      opacity: 0.7;
+      border: none;
+      padding: 15px 32px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #btn {
+      background-color: rgb(247, 238, 238);
+      border: none;
+      color: #4d2c57;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    #btn:hover {
+      background-color: rgb(192, 182, 181);
+    }
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .singUp {
+    .mainSingUp {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+// Sign-up section end
+
+// Follow us on Instagram section start
+.followUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .instagram {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #4d2c57;
+  }
+
+  .instagramCards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .instaName {
+    a {
+      width: 100%;
+      height: 120px;
+      font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 996px) {
+  .followUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .instagram {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: #4d2c57;
+      h2{
+        font-size: 50px;
+      }
+    }
+
+    .instagramCards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+// Follow us on Instagram section end

@@ -1,0 +1,58 @@
+nav {
+  .mainNav {
+    background-color: white;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .mainLogo {
+      display: flex;
+      gap: 40px;
+      i {
+        display: none;
+      }
+      img {
+        height: 17px;
+      }
+    }
+
+    .maincontent {
+      ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+          color: black;
+          font-size: 18px;
+          font-family: "DM Sans", sans-serif;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 996px) {
+  nav {
+    .mainNav {
+      .mainLogo {
+        i {
+          display: block;
+        }
+      }
+      .maincontent {
+        ul {
+          li {
+            display: none;
+          }
+          .card {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

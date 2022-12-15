@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #f6f7f6;
+}
+footer .footerEnd {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 36vh;
+}
+footer .footerEnd .mina {
+  margin-top: 40px;
+}
+footer .footerEnd .mina p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+footer .footerEnd .mina i {
+  margin: 15px;
+  font-size: 20px;
+}
+footer .footerEnd .footLink {
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+@media screen and (max-width: 996px) {
+  footer .footerEnd {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .footerEnd .mina {
+    margin-top: 40px;
+  }
+  footer .footerEnd .mina p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto";
+  }
+  footer .footerEnd .mina i {
+    margin: 15px;
+    font-size: 20px;
+  }
+  footer .footerEnd .footLink {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+nav .mainNav {
+  background-color: white;
+  max-width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+nav .mainNav .mainLogo {
+  display: flex;
+  gap: 40px;
+}
+nav .mainNav .mainLogo i {
+  display: none;
+}
+nav .mainNav .mainLogo img {
+  height: 17px;
+}
+nav .mainNav .maincontent ul {
+  display: flex;
+  gap: 30px;
+}
+nav .mainNav .maincontent ul li {
+  color: black;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (max-width: 996px) {
+  nav .mainNav .mainLogo i {
+    display: block;
+  }
+  nav .mainNav .maincontent ul li {
+    display: none;
+  }
+  nav .mainNav .maincontent ul .card {
+    display: block;
+  }
+}
+.handmade {
+  background-image: url(../imgs/HandmadeCeramics.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.handmade .ceramics {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
+}
+.handmade .ceramics h1 {
+  font-weight: 200px;
+  font-size: 74px;
+  line-height: 84px;
+}
+.handmade .ceramics p {
+  font-size: 20px;
+  line-height: 84px;
+}
+.handmade .ceramics #btn {
+  background-color: rgb(247, 238, 238);
+  border: none;
+  color: #4d2c57;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.handmade .ceramics #btn:hover {
+  background-color: rgb(192, 182, 181);
+}
+
+@media screen and (max-width: 996px) {
+  .handmade .ceramics h1 {
+    font-size: 40px;
+  }
+  .handmade .ceramics p {
+    font-size: 15px;
+  }
+}
+.ourBestsellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourBestsellers .best {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #4d2c57;
+}
+.ourBestsellers .cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.ourBestsellers .cards .cardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4d2c57;
+}
+.ourBestsellers .buyBtn {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourBestsellers #buybtn {
+  background-color: white;
+  border: 2px solid black;
+  color: #4d2c57;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.ourBestsellers #buybtn:hover {
+  background-color: #4d2c57;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 996px) {
+  .ourBestsellers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ourBestsellers .best {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #4d2c57;
+  }
+  .ourBestsellers .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.homeDecor {
+  background-image: url(../imgs/HomeDecoritems.jfif);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.homeDecor .decor {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
+}
+.homeDecor .decor h1 {
+  font-weight: 200px;
+  font-size: 74px;
+  line-height: 84px;
+}
+.homeDecor .decor p {
+  font-size: 20px;
+  line-height: 84px;
+}
+.homeDecor .decor #btn {
+  background-color: rgb(247, 238, 238);
+  border: none;
+  color: #4d2c57;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.homeDecor .decor #btn:hover {
+  background-color: rgb(192, 182, 181);
+}
+
+@media screen and (max-width: 996px) {
+  .homeDecor .decor h1 {
+    font-size: 40px;
+  }
+  .homeDecor .decor p {
+    font-size: 15px;
+  }
+}
+.twoCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+.twoCards .mainCards {
+  display: flex;
+  flex-direction: row;
+  width: 82%;
+  justify-content: space-around;
+}
+.twoCards .mainCards h1 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  color: #4d2c57;
+}
+.twoCards .mainCards p {
+  font-family: "Roboto", sans-serif;
+  color: #4d2c57;
+  margin-top: 20px;
+}
+.twoCards .buyBtn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.twoCards #buybtn {
+  background-color: white;
+  border: 2px solid black;
+  color: #4d2c57;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.twoCards #buybtn:hover {
+  background-color: #4d2c57;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 996px) {
+  .twoCards .mainCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.singUp {
+  background-image: url(../imgs/Sign-up.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.singUp .mainSingUp {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 100px;
+}
+.singUp .mainSingUp h1 {
+  font-weight: 200px;
+  font-size: 74px;
+  line-height: 84px;
+}
+.singUp .mainSingUp .inp {
+  background-color: #f1f1f1;
+  opacity: 0.7;
+  border: none;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.singUp .mainSingUp #btn {
+  background-color: rgb(247, 238, 238);
+  border: none;
+  color: #4d2c57;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.singUp .mainSingUp #btn:hover {
+  background-color: rgb(192, 182, 181);
+}
+
+@media screen and (max-width: 996px) {
+  .singUp .mainSingUp h1 {
+    font-size: 40px;
+  }
+}
+.followUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.followUs .instagram {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #4d2c57;
+}
+.followUs .instagramCards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.followUs .instaName a {
+  width: 100%;
+  height: 120px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 996px) {
+  .followUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .followUs .instagram {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #4d2c57;
+  }
+  .followUs .instagram h2 {
+    font-size: 50px;
+  }
+  .followUs .instagramCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=main.css.map */
