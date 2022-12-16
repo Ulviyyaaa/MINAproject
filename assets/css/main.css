@@ -71,6 +71,7 @@ nav .mainNav {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
 }
 nav .mainNav .mainLogo {
   display: flex;
@@ -179,6 +180,14 @@ nav .mainNav .maincontent ul li {
   width: 100%;
   justify-content: space-around;
 }
+.ourBestsellers .cards .cards_img {
+  width: 288px;
+  height: 304px;
+}
+.ourBestsellers .cards .cards_img img {
+  width: 100%;
+  height: 100%;
+}
 .ourBestsellers .cards .cardText {
   display: flex;
   flex-direction: column;
@@ -225,7 +234,7 @@ nav .mainNav .maincontent ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 25px;
     color: #4d2c57;
   }
   .ourBestsellers .cards {
@@ -291,51 +300,41 @@ nav .mainNav .maincontent ul li {
   }
 }
 .twoCards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
+  width: 100%;
 }
 .twoCards .mainCards {
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
-  width: 82%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.twoCards .mainCards h1 {
-  font-size: 35px;
-  font-family: "Roboto", sans-serif;
-  color: #4d2c57;
-}
-.twoCards .mainCards p {
-  font-family: "Roboto", sans-serif;
-  color: #4d2c57;
-  margin-top: 20px;
-}
-.twoCards .buyBtn {
-  width: 100%;
-  height: 100px;
+.twoCards .mainCards .twoCards_width {
+  width: 550px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  row-gap: 20px;
 }
-.twoCards #buybtn {
-  background-color: white;
-  border: 2px solid black;
+.twoCards .mainCards .twoCards_width img {
+  width: 100%;
+}
+.twoCards .mainCards .twoCards_width h2 {
+  font-size: 30px;
   color: #4d2c57;
-  padding: 15px 32px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
-.twoCards #buybtn:hover {
+.twoCards .mainCards .twoCards_width p {
+  font-size: 21px;
+  color: #4d2c57;
+}
+.twoCards .mainCards .twoCards_width .buyBtn #buybtn {
+  background-color: white;
+  width: 150px;
+  height: 40px;
+  border: 2px solid #4d2c57;
+}
+.twoCards .mainCards .twoCards_width .buyBtn #buybtn:hover {
   background-color: #4d2c57;
   color: white;
-  border: none;
   font-weight: bold;
 }
 
@@ -344,7 +343,13 @@ nav .mainNav .maincontent ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+  }
+  .twoCards .mainCards .twoCards_width {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 30px;
   }
 }
 .singUp {
@@ -384,6 +389,7 @@ nav .mainNav .maincontent ul li {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  z-index: 1;
 }
 .singUp .mainSingUp #btn {
   background-color: rgb(247, 238, 238);
@@ -458,6 +464,86 @@ nav .mainNav .maincontent ul li {
     font-size: 50px;
   }
   .followUs .instagramCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.shop {
+  background-image: url(../imgs/Shop.png);
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+.shop .shopText {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+}
+.shop .shopText h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+
+.shopMainCards {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.shopMainCards .shopCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+}
+.shopMainCards .shopCards .shopCard {
+  margin-top: 30px;
+}
+.shopMainCards .shopCards .shopCard .shopCardImg {
+  overflow: hidden;
+}
+.shopMainCards .shopCards .shopCard .shopCardImg img {
+  max-width: 100%;
+  width: 400px;
+}
+.shopMainCards .shopCards .shopCard .shopCardImg img:hover {
+  transform: scale(1.4);
+  transition: 5s;
+}
+.shopMainCards .shopCards .shopCard .shopCardText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shopMainCards .shopCards .shopCard .shopCardText h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 996px) {
+  .shopMainCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shopMainCards .shopCards {
     display: flex;
     flex-direction: column;
     align-items: center;

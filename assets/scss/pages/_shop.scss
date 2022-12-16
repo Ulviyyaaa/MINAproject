@@ -1,0 +1,84 @@
+// shop section start
+.shop {
+  background-image: url(../imgs/Shop.png);
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+
+  .shopText {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 100px;
+      font-weight: 400;
+    }
+  }
+}
+// shop section end
+
+// shop card section start
+.shopMainCards {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  .shopCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    .shopCard {
+      margin-top: 30px;
+      .shopCardImg {
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          width: 400px;
+          &:hover {
+            transform: scale(1.4);
+            transition: 5s;
+          }
+        }
+      }
+      .shopCardText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          font-size: 20px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 996px) {
+  .shopMainCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .shopCards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

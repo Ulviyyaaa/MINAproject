@@ -89,6 +89,14 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    .cards_img {
+      width: 288px;
+      height: 304px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
 
     .cardText {
       display: flex;
@@ -141,8 +149,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 40px;
-      color: #4d2c57;
+      font-size: 25px;
+      color: #4d2c57; 
     }
 
     .cards {
@@ -227,69 +235,58 @@
 
 // Two cards section start
 .twoCards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8%;
-
+  width: 100%;
   .mainCards {
+    padding: 100px 0;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    width: 82%;
-    justify-content: space-around;
-    
-
-    h1 {
-      font-size: 35px;
-      font-family: "Roboto", sans-serif;
-      color: #4d2c57;
-    }
-
-    p {
-      font-family: "Roboto", sans-serif;
-      color: #4d2c57;
-      margin-top: 20px;
-    }
-
-  }
-
-  .buyBtn {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  #buybtn {
-    background-color: white;
-    border: 2px solid black;
-    color: #4d2c57;
-    padding: 15px 32px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-  #buybtn:hover {
-    background-color: #4d2c57;
-    color: white;
-    border: none;
-    font-weight: bold;
-  }
-}
-@media screen and (max-width: 996px){
-  .twoCards{
-    .mainCards{
+    justify-content: space-between;
+    .twoCards_width {
+      width: 550px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      
+      row-gap: 20px;
+      img {
+        width: 100%;
+      }
+      h2 {
+        font-size: 30px;
+        color: #4d2c57;
+      }
+      p {
+        font-size: 21px;
+        color: #4d2c57;
+      }
+      .buyBtn {
+        #buybtn {
+          background-color: white;
+          width: 150px;
+          height: 40px;
+          border: 2px solid #4d2c57;
+          &:hover {
+            background-color: #4d2c57;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 996px) {
+  .twoCards {
+    .mainCards {
+      display: flex;
+       flex-direction: column;
+       align-items: center;
+      .twoCards_width {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -334,6 +331,7 @@
       font-size: 16px;
       margin: 4px 2px;
       cursor: pointer;
+      z-index: 1;
     }
 
     #btn {
@@ -419,7 +417,7 @@
       align-items: center;
       font-size: 40px;
       color: #4d2c57;
-      h2{
+      h2 {
         font-size: 50px;
       }
     }
